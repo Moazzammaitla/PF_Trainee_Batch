@@ -1,0 +1,155 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styles */
+body {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #4070f4;
+  overflow: auto; /* Make body scrollable */
+}
+
+/* Heading Container Styles */
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading Text Styles */
+.heading {
+  color: #fff; /* White color */
+  font-size: 40px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Table Wrapper Styles */
+.table-container {
+  margin-bottom: 20px;
+  margin: 20px auto; /* Set top and bottom margin to 20px and auto for left and right margins */
+  max-width: 800px; /* Adjust as needed */
+  width: calc(100% - 40px); /* Adjust as needed */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Make table container scrollable */
+}
+/* Table Styles */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Example styling for table rows */
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Example styling for table cells */
+.table-container td {
+  text-align: center;
+}
+
+/* Example styling for table links */
+.table-container a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.table-container a:hover {
+  text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content Styles */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: row; /* Display inputs horizontally */
+  flex-wrap: wrap; /* Allow inputs to wrap */
+  justify-content: space-around; /* Distribute space evenly between inputs */
+}
+
+/* Input Styles */
+.modal-content input {
+  margin: 5px; /* Add spacing between inputs */
+  flex: 1; /* Allow inputs to grow equally */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-data-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-data-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-button {
+  margin-right: 5px;
+  cursor: pointer;
+}

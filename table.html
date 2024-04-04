@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Data</title>
+    <link rel="stylesheet" href="styleTable.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1 class="heading">Product Data</h1>
+    </div>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        onkeyup="filterTable()"
+        placeholder="Search..."
+      />
+    </div>
+    <div class="table-container">
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>SKU</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Manufacturer</th>
+            <th>Supplier</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="add-data-container">
+      <button class="add-data-button" onclick="openAddModal()">
+        Add Product
+      </button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle">Add Product</h3>
+        <form id="addProductFormModal">
+          <input
+            type="text"
+            id="newNameModal"
+            placeholder="Name"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newSKUModal"
+            placeholder="SKU"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newCategoryModal"
+            placeholder="Category"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newPriceModal"
+            placeholder="Price"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newStockModal"
+            placeholder="Stock"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newManufacturerModal"
+            placeholder="Manufacturer"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newSupplierModal"
+            placeholder="Supplier"
+            required
+          /><br />
+          <input
+            type="text"
+            id="newDescriptionModal"
+            placeholder="Description"
+            required
+          /><br />
+          <button
+            type="button"
+            id="modalActionButton"
+            onclick="addOrUpdateProduct()"
+          >
+            Add Product
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="scriptTable.js"></script>
+  </body>
+</html>
